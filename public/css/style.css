@@ -1,0 +1,32 @@
+body {
+    background-color: #ede7b3;
+    height: 100vh;
+}
+
+.main {
+    height: 80%;
+    margin-bottom: 20px;
+}
+
+.neww-add {
+    text-decoration: none;
+}
+
+.add-button {
+    border-radius: 100px;
+}
+
+.story {
+    font-family: 'Yellowtail', cursive;
+    font-size: 9rem;
+    color: #d2ba1f;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.content-div {
+    margin-top: 10px;
+}

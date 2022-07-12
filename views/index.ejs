@@ -1,0 +1,32 @@
+<title>Home</title>
+
+<%- include("header") -%>
+
+<div class="container-fluid main">
+    <% if (titles.length === 0) { %>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 text-center story">Start your story</div>
+            <div class="col-lg-2"></div>
+        </div>
+    <% } else { %>
+        <% for (let i = 0; i < titles.length; i++ ) { %>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 content-div">
+                    <h1><%=titles[i]%></h1>
+                    <p><%=content[i].slice(0,100)%><span><a href="/posts/<%=titles[i]%>">Read More</a></span></p>
+                    <hr>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        <% } %>
+        
+    <% } %>
+    <div class="button-div">
+        <a class="neww-add" href="/add"><button class="btn btn-warning add-button">+</button></div></a>
+    </div>
+    
+</div>
+
+<%- include("footer") -%>
